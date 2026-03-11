@@ -35,6 +35,7 @@ Read these files using the Read tool (in parallel):
 | agents, subagents, commands | 5 |
 | hooks, mcp | 6 |
 | orchestration, advanced, capstone | 7 |
+| advanced-skills, production-skills, testing-skills, distribution | 8 |
 
 ## Step 3: Read the module content
 

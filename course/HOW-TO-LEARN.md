@@ -1,6 +1,6 @@
 # How to Learn Claude Code — Quick Start Guide
 
-This repo contains a structured 8-module course that takes you from basic Claude Code usage to full agentic engineering mastery. Here's how to use it.
+This repo contains a structured 9-module course (Modules 0-8) that takes you from basic Claude Code usage to full agentic engineering mastery. Here's how to use it.
 
 ---
 
@@ -49,6 +49,7 @@ Read the module files directly in `course/`:
 | 5 | `module-5-agents-commands.md` | Subagents, commands, Command→Agent→Skill pattern |
 | 6 | `module-6-hooks-mcp.md` | 19 hook events, decision control, browser automation MCPs |
 | 7 | `module-7-orchestration.md` | PTC, parallel agents, cross-model workflows, capstone |
+| 8 | `module-8-advanced-skills.md` | Progressive disclosure, workflow patterns, testing, distribution |
 
 Each module has: **Concepts** → **Quiz (with answers)** → **Build Exercise** → **Completion Checklist**
 
@@ -62,8 +63,9 @@ Each module has: **Concepts** → **Quiz (with answers)** → **Build Exercise**
 4. **Modules 4-5** (2-3 hours): Build your first skill and agent — this is where it gets powerful
 5. **Module 6** (1-2 hours): Add hooks for lifecycle events
 6. **Module 7** (3-6 hours): The capstone — build a complete multi-agent system
+7. **Module 8** (1.5-2 hours): Advanced skills mastery — production-grade patterns from Anthropic's official guide
 
-**Total time:** ~10-15 hours for the full course
+**Total time:** ~12-17 hours for the full course
 
 ---
 
@@ -102,7 +104,8 @@ course/
 ├── module-4-skills.md
 ├── module-5-agents-commands.md
 ├── module-6-hooks-mcp.md
-└── module-7-orchestration.md
+├── module-7-orchestration.md
+└── module-8-advanced-skills.md
 
 .claude/
 ├── commands/learn.md          ← /learn command (interactive instructor)

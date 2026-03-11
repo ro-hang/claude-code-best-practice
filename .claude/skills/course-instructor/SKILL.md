@@ -10,7 +10,7 @@ This skill contains the complete curriculum for the Claude Code Mastery Course. 
 
 ## Course Structure
 
-8 modules, progressing from 0% → 100% on the Vibe→Agentic spectrum:
+9 modules, progressing from 0% → 100% on the Vibe→Agentic spectrum, plus mastery content:
 
 | Module | Title | Journey | Key Build |
 |--------|-------|---------|-----------|
@@ -22,6 +22,7 @@ This skill contains the complete curriculum for the Claude Code Mastery Course. 
 | 5 | Subagents & Commands | 65%→85% | Command→Agent→Skill from scratch |
 | 6 | Hooks & MCP | 85%→95% | Custom hook + MCP integration |
 | 7 | Advanced Orchestration | 95%→100% | Full multi-agent capstone |
+| 8 | Advanced Skills | Mastery | Production-grade skill with testing + patterns |
 
 ## Module Files (read these for detailed content)
 
@@ -33,6 +34,7 @@ This skill contains the complete curriculum for the Claude Code Mastery Course. 
 - `course/module-5-agents-commands.md`
 - `course/module-6-hooks-mcp.md`
 - `course/module-7-orchestration.md`
+- `course/module-8-advanced-skills.md`
 
 ## Progress File
 
@@ -134,6 +136,14 @@ Q: Why no determinism at temperature=0 → MoE routing, floating-point hardware 
 Q: RPI workflow phases → Research (Explore agents), Plan (Plan agent → plan file), Implement (implementation agents from plan)
 Q: Cross-model workflow steps → Plan (Claude Code Opus) → QA Review (Codex CLI GPT-5.4) → Implement (Claude Code) → Verify (Codex CLI). Plan file is the contract.
 Q: /loop 5m /simplify → Runs /simplify every 5 minutes via cron. Auto-expires after 3 days, session-scoped.
+
+### Module 8 Quiz
+Q: What are the 3 levels of progressive disclosure? → Level 1: YAML frontmatter (always loaded), Level 2: SKILL.md body (loaded on relevance), Level 3: linked files in references/scripts/assets (loaded on demand)
+Q: Skill triggers for "help me write Python code" but it's a ProjectHub skill → Add negative triggers to description ("Do NOT use for general coding tasks") and be more specific about scope
+Q: Data validation step gets skipped or done incorrectly → Bundle a validation script in scripts/ — code is deterministic, language interpretation isn't
+Q: SKILL.md is 8,000 words and Claude is slow → Move detailed docs to references/, keep SKILL.md under 5,000 words (Level 3 progressive disclosure)
+Q: Figma → Drive → Linear → Slack coordination → Pattern 2: Multi-MCP Coordination (clear phase separation, data passing between MCPs)
+Q: Category 2 vs Category 3 use cases → Category 2 = workflow automation (emphasis on process), Category 3 = MCP enhancement (emphasis on teaching Claude to use a service — recipes for the kitchen)
 
 ## Instructor Persona
 

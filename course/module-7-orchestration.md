@@ -296,10 +296,12 @@ Agent always runs as a background task. Check on it with `/tasks`. Useful for lo
 - [.claude/commands/workflows/](../.claude/commands/workflows/) — Audit workflow commands (meta-pattern)
 - [reports/claude-usage-and-rate-limits.md](../reports/claude-usage-and-rate-limits.md) — Usage, billing, rate limits
 
-**Previous:** [Module 6 →](module-6-hooks-mcp.md)
+**Previous:** [Module 6 →](module-6-hooks-mcp.md) | **Next:** [Module 8 — Advanced Skills →](module-8-advanced-skills.md)
 
 ---
 
 **Congratulations — you've reached 100% Agentic Engineering.**
 
 The journey from "type prompts and hope" to "structured multi-agent systems with persistent memory, automated hooks, and production-grade orchestration" is complete. The capstone project is your proof.
+
+**Want to go deeper on skills?** Module 8 covers production-grade skill engineering — progressive disclosure, workflow patterns, testing, troubleshooting, and distribution — based on Anthropic's official skills guide.

@@ -1,7 +1,11 @@
 {
-  "current_module": 0,
-  "completed_modules": [],
-  "quiz_scores": {},
+  "current_module": 4,
+  "completed_modules": [0, 1, 2, 3],
+  "quiz_scores": {
+    "1": "4/4",
+    "2": "3.5/4",
+    "3": "3.5/4"
+  },
   "last_session": "2026-03-11",
   "notes": {}
 }

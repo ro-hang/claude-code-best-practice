@@ -221,5 +221,6 @@ Read both `.claude/skills/weather-fetcher/SKILL.md` and `.claude/skills/weather-
 - [reports/claude-skills-for-larger-mono-repos.md](../reports/claude-skills-for-larger-mono-repos.md) — Deep dive on discovery behavior in monorepos
 - [.claude/skills/](../.claude/skills/) — All skills in this repo (live examples of both patterns)
 - [implementation/claude-skills-implementation.md](../implementation/claude-skills-implementation.md) — Implementation checklist
+- [Module 8: Advanced Skills](module-8-advanced-skills.md) — Production-grade skills: progressive disclosure, 5 workflow patterns, testing, troubleshooting, distribution (based on Anthropic's official guide)
 
 **Previous:** [Module 3 →](module-3-config.md) | **Next:** [Module 5 — Subagents & Commands →](module-5-agents-commands.md)

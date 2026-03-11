@@ -45,6 +45,7 @@ A structured, progressive curriculum for mastering Claude Code — from basic us
 | 5 | [Subagents & Commands](module-5-agents-commands.md) | Build + Quiz | Build Command→Agent→Skill from scratch | ☐ |
 | 6 | [Hooks & MCP](module-6-hooks-mcp.md) | Build + Lab | Custom hook + MCP integration | ☐ |
 | 7 | [Advanced Orchestration](module-7-orchestration.md) | Capstone | Full multi-agent system for a real use case | ☐ |
+| 8 | [Advanced Skills](module-8-advanced-skills.md) | Build + Quiz | Production-grade skill with testing + patterns | ☐ |
 
 ---
 
@@ -75,5 +76,6 @@ Every concept in this course is grounded in files that already exist in this rep
 | Skills in Monorepos | [reports/claude-skills-for-larger-mono-repos.md](../reports/claude-skills-for-larger-mono-repos.md) |
 | Browser MCPs | [reports/claude-in-chrome-v-chrome-devtools-mcp.md](../reports/claude-in-chrome-v-chrome-devtools-mcp.md) |
 | Boris's Tips | [tips/claude-boris-tips-feb-26.md](../tips/claude-boris-tips-feb-26.md) |
+| Advanced Skills (Anthropic Guide) | [The Complete Guide to Building Skills for Claude](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf) |
 | Orchestration Demo | [orchestration-workflow/orchestration-workflow.md](../orchestration-workflow/orchestration-workflow.md) |
 | Live Examples | [.claude/agents/](../.claude/agents/), [.claude/skills/](../.claude/skills/), [.claude/commands/](../.claude/commands/) |
