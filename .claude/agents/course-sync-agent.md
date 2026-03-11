@@ -49,7 +49,16 @@ You are the course sync agent. Your job is to pull changes from the upstream rep
    - [bullet points of what changed]
    ```
 
-8. **Return a summary** of what was updated and any manual review needed.
+8. **Commit and push:**
+   ```
+   git add course/ .claude/skills/course-instructor/SKILL.md
+   git commit -m "sync: update course modules from upstream (YYYY-MM-DD)
+
+   Co-Authored-By: Claude <noreply@anthropic.com>"
+   git push origin main
+   ```
+
+9. **Return a summary** of what was updated and any manual review needed.
 
 ## Important Rules
 
