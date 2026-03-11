@@ -2,6 +2,7 @@
 name: course-sync
 description: Knowledge for syncing upstream changes into course modules
 user-invocable: false
+disable-model-invocation: true
 ---
 
 # Course Sync Knowledge
