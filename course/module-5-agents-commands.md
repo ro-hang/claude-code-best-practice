@@ -10,7 +10,7 @@
 
 By the end of this module you'll be able to:
 - Write a complete agent definition with all 15 frontmatter fields
-- Invoke agents via the Task tool (never bash)
+- Invoke agents via the Agent tool (never bash)
 - Understand agent memory scopes and when to use each
 - Write commands that orchestrate agents and skills
 - Explain the self-evolving agent pattern (presentation-curator)
@@ -47,7 +47,7 @@ Agents live in `.claude/agents/<name>.md`:
 ---
 name: deploy-manager                     # Unique identifier (lowercase, hyphens)
 description: Use PROACTIVELY for deployment pipelines  # When to invoke
-tools: Read, Write, Edit, Bash, Task(monitor)  # Tool allowlist (omit = inherit all)
+tools: Read, Write, Edit, Bash, Agent(monitor)  # Tool allowlist (omit = inherit all)
 disallowedTools: NotebookEdit             # Remove from allowed tools
 model: sonnet                            # haiku, sonnet, opus, or inherit (default)
 permissionMode: acceptEdits              # default, acceptEdits, bypassPermissions, plan
@@ -82,7 +82,7 @@ pre-flight checks and use rollback-procedures if any step fails.
 
 **Important fields to know deeply:**
 
-`tools` — Be explicit. Restricting tools keeps agents fast and safe. `Task(agent_type)` syntax restricts which subagents this agent can spawn.
+`tools` — Be explicit. Restricting tools keeps agents fast and safe. `Agent(agent_type)` syntax restricts which subagents this agent can spawn.
 
 `description` with `"PROACTIVELY"` — This makes Claude automatically invoke the agent when relevant, without the user having to ask. Use carefully.
 

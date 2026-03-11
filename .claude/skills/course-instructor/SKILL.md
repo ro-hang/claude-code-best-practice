@@ -118,7 +118,7 @@ Q: context: fork → Runs skill in isolated subagent. Use for heavy work that wo
 Q: Skills available in packages/frontend/ → .claude/skills/ (project root) + packages/frontend/.claude/skills/. NOT packages/backend/.claude/skills/
 
 ### Module 5 Quiz
-Q: Why no bash for subagent invocation? → Bash creates disconnected shell process outside Task tool infrastructure
+Q: Why no bash for subagent invocation? → Bash creates disconnected shell process outside Agent tool infrastructure
 Q: tools vs disallowedTools → tools = explicit allowlist (strict); disallowedTools = remove from inherited set (permissive minus exceptions)
 Q: memory scope for team-shared agent learning → project (stored in .claude/agent-memory/, committed)
 Q: Complex 5-phase workflow (research, plan, implement, test, PR) → One command orchestrating multiple agents via sequential Agent() calls (Task() is the legacy alias)

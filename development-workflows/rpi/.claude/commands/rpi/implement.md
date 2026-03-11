@@ -135,12 +135,12 @@ For each phase in PLAN.md:
 
 ## Step 1: Code Discovery (Per Phase)
 
-**Agent**: Explore (Built-in, via Task tool)
+**Agent**: Explore (Built-in, via Agent tool)
 
 **Purpose**: Ground implementation in code reality before making changes.
 
 **Process**:
-1. Launch Explore agent via Task tool with `subagent_type="Explore"`
+1. Launch Explore agent via Agent tool with `subagent_type="Explore"`
 2. Request analysis of files affected by current phase
 3. Understand existing patterns, integration points, constraints
 

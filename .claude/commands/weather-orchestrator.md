@@ -15,7 +15,7 @@ Use the AskUserQuestion tool to ask the user whether they want the temperature i
 
 ### Step 2: Fetch Weather Data
 
-Use the Task tool to invoke the weather agent:
+Use the Agent tool to invoke the weather agent:
 - subagent_type: weather-agent
 - description: Fetch Dubai weather data
 - prompt: Fetch the current temperature for Dubai, UAE in [unit requested by user]. Return the numeric temperature value and unit. The agent has a preloaded skill (weather-fetcher) that provides the detailed instructions.
@@ -32,8 +32,8 @@ The skill will use the temperature value and unit from Step 2 (available in the 
 
 ## Critical Requirements
 
-1. **Use Task Tool for Agent**: DO NOT use bash commands to invoke agents. You must use the Task tool.
-2. **Use Skill Tool for SVG Creator**: Invoke the SVG creator via the Skill tool, not the Task tool.
+1. **Use Agent Tool**: DO NOT use bash commands to invoke agents. You must use the Agent tool.
+2. **Use Skill Tool for SVG Creator**: Invoke the SVG creator via the Skill tool, not the Agent tool.
 3. **Pass User Preference**: Include the user's temperature unit preference when invoking the agent.
 4. **Sequential Flow**: Complete each step before moving to the next.
 

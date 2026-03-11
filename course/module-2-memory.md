@@ -114,7 +114,7 @@ A single Rule encodes a convention that applies to **every future interaction** 
 
 ## Delegation Rule
 Any request to update, modify, or fix the presentation MUST be handled by the
-`presentation-curator` agent. Always delegate via the Task tool — never edit directly.
+`presentation-curator` agent. Always delegate via the Agent tool — never edit directly.
 ```
 
 Every time Claude works on a markdown file, the `markdown-docs` rule fires. Every time Claude touches presentation files, it delegates to the curator agent. You never have to re-explain these conventions.

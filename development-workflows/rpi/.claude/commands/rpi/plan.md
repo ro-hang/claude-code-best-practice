@@ -238,7 +238,7 @@ This command creates comprehensive planning documentation for a feature request.
 
 **Prerequisites**: Phases 1-4 complete
 
-**Agent**: documentation-analyst-writer (via Task tool)
+**Agent**: documentation-analyst-writer (via Agent tool)
 
 **Process**:
 1. **Generate pm.md** (Product Requirements):
@@ -304,10 +304,10 @@ This command orchestrates specialist agents:
 **Custom Agents** (product-manager, senior-software-engineer, ux-designer):
 - Claude Code automatically detects these from `.claude/agents/`
 - Reference them naturally: "Acting as the senior-software-engineer agent..."
-- NO Task tool invocation needed
+- NO Agent tool invocation needed
 
 **Built-in Agent** (documentation-analyst-writer):
-- Use Task tool with `subagent_type="documentation-analyst-writer"`
+- Use Agent tool with `subagent_type="documentation-analyst-writer"`
 
 ---
 

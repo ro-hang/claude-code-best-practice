@@ -10,7 +10,7 @@
 
 By the end of this module you'll be able to:
 - Navigate the 5-level settings hierarchy and know what overrides what
-- Write permission rules using the full syntax (Bash, Read, Write, WebFetch, Task, MCP)
+- Write permission rules using the full syntax (Bash, Read, Write, WebFetch, Agent, MCP)
 - Know which features are global-only vs project-scoped
 - Configure at least one MCP server
 - Use key CLI startup flags for automation and budget control
@@ -58,7 +58,7 @@ The permission system controls what Claude can do without asking. You define all
 | `Edit` | `Edit(path)` | `Edit(*.ts)`, `Edit(src/**)` |
 | `Write` | `Write(path)` | `Write(*.md)` |
 | `WebFetch` | `WebFetch(domain:pattern)` | `WebFetch(domain:*)` = all domains |
-| `Task` | `Task(agent-name)` | `Task(Explore)`, `Task(my-agent)` |
+| `Agent` | `Agent(agent-name)` | `Agent(Explore)`, `Agent(my-agent)` |
 | `Skill` | `Skill(skill-name)` | `Skill(weather-fetcher)` |
 | `MCP` | `mcp__server__tool` | `mcp__memory__*`, `mcp__*` = all |
 

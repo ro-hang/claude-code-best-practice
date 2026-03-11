@@ -213,7 +213,6 @@ Control what tools and operations Claude can perform.
 | `NotebookEdit` | `NotebookEdit(pattern)` | `NotebookEdit(*)` |
 | `WebFetch` | `WebFetch(domain:pattern)` | `WebFetch(domain:example.com)` |
 | `WebSearch` | `WebSearch` | Global web search |
-| `Task` | `Task(agent-name)` | `Task(Explore)`, `Task(my-agent)` |
 | `Agent` | `Agent(name)` | `Agent(researcher)`, `Agent(*)` — permission scoped to subagent spawning |
 | `Skill` | `Skill(skill-name)` | `Skill(weather-fetcher)` |
 | `MCP` | `mcp__server__tool` or `MCP(server:tool)` | `mcp__memory__*`, `MCP(github:*)` |

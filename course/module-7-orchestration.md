@@ -109,11 +109,11 @@ The workflow commands in this repo demonstrate parallel execution. Look at `work
 ```markdown
 ## Phase 0: Launch 2 agents in parallel
 
-Task(subagent_type="workflow-concepts-agent", prompt="Research drift...")
-Task(subagent_type="claude-code-guide", prompt="Research latest features...")
+Agent(subagent_type="workflow-concepts-agent", prompt="Research drift...")
+Agent(subagent_type="claude-code-guide", prompt="Research latest features...")
 ```
 
-Both Task() calls fire simultaneously. Results arrive async. The command then merges findings.
+Both Agent() calls fire simultaneously. Results arrive async. The command then merges findings.
 
 **When to parallelize:**
 - Independent research tasks (searching different sources)
@@ -139,8 +139,8 @@ Each agent gets a temporary git branch. Agents can write code without conflictin
 
 Look at `development-workflows/rpi/`. This is a multi-agent workflow for complex implementation tasks:
 
-1. **Research phase:** `Task(Explore)` agents gather information about the codebase and requirements
-2. **Plan phase:** `Task(Plan)` agent designs the implementation approach, writes a plan file
+1. **Research phase:** `Agent(Explore)` agents gather information about the codebase and requirements
+2. **Plan phase:** `Agent(Plan)` agent designs the implementation approach, writes a plan file
 3. **Implement phase:** Implementation agents work from the approved plan
 
 **Why this structure works:**
@@ -242,7 +242,7 @@ Build a complete multi-agent system for something you actually care about. This 
 **Architecture (required):**
 - [ ] A command as the entry point and orchestrator
 - [ ] At least 2 agents (at least one with restricted tools and a preloaded skill)
-- [ ] At least 1 parallel Task() execution
+- [ ] At least 1 parallel Agent() execution
 - [ ] Agent memory that persists across sessions (choose appropriate scope)
 - [ ] Hooks for at least 1 lifecycle event
 

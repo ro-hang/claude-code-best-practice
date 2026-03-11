@@ -15,7 +15,7 @@ This is a **read-then-report** workflow. Launch agents, merge results, and produ
 
 ## Phase 0: Launch Both Agents in Parallel
 
-**Immediately** spawn both agents using the Task tool **in the same message** (parallel launch):
+**Immediately** spawn both agents using the Agent tool **in the same message** (parallel launch):
 
 ### Agent 1: workflow-claude-settings-agent
 

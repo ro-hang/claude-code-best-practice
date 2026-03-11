@@ -143,7 +143,7 @@ This command performs comprehensive research and analysis of feature requests **
 
 **Prerequisites**: Phases 1-2 complete, product viability established
 
-**Agent**: Explore (via Task tool with subagent_type="Explore")
+**Agent**: Explore (via Agent tool with subagent_type="Explore")
 
 **Purpose**: **CRITICAL PHASE** - Deeply analyze existing codebase BEFORE making technical feasibility assessment.
 
@@ -242,7 +242,7 @@ This command performs comprehensive research and analysis of feature requests **
 
 **Prerequisites**: Phases 1-4 complete
 
-**Agent**: documentation-analyst-writer (via Task tool)
+**Agent**: documentation-analyst-writer (via Agent tool)
 
 **Process**:
 1. **Launch documentation-analyst-writer agent** with all phase outputs
@@ -272,10 +272,10 @@ This command orchestrates 6 specialist agents:
 |-------|-------|------|----------|
 | Phase 1 | requirement-parser | Custom | .claude/agents/requirement-parser.md |
 | Phase 2 | product-manager | Custom | .claude/agents/product-manager.md |
-| Phase 2.5 | Explore | Built-in | Task tool with subagent_type="Explore" |
+| Phase 2.5 | Explore | Built-in | Agent tool with subagent_type="Explore" |
 | Phase 3 | senior-software-engineer | Custom | .claude/agents/senior-software-engineer.md |
 | Phase 4 | technical-cto-advisor | Custom | .claude/agents/technical-cto-advisor.md |
-| Phase 5 | documentation-analyst-writer | Built-in | Task tool with subagent_type="documentation-analyst-writer" |
+| Phase 5 | documentation-analyst-writer | Built-in | Agent tool with subagent_type="documentation-analyst-writer" |
 
 ---
 

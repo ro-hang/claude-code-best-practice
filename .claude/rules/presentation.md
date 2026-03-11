@@ -2,10 +2,10 @@
 
 ## Delegation Rule
 
-Any request to update, modify, or fix the presentation (`presentation/index.html`) MUST be handled by the `presentation-curator` agent. Always delegate presentation work to this agent via the Task tool — never edit the presentation directly.
+Any request to update, modify, or fix the presentation (`presentation/index.html`) MUST be handled by the `presentation-curator` agent. Always delegate presentation work to this agent via the Agent tool — never edit the presentation directly.
 
 ```
-Task(subagent_type="presentation-curator", description="...", prompt="...")
+Agent(subagent_type="presentation-curator", description="...", prompt="...")
 ```
 
 ## Why
