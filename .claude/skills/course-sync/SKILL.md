@@ -55,3 +55,58 @@ This skill provides the course-sync-agent with knowledge about the course struct
 - **New settings** → Update Module 3 settings section
 - **New agents/skills/commands** → Update Module 5 or 4 as appropriate
 - **Changed frontmatter fields** → Update the relevant module's frontmatter reference
+- **Entirely new Claude Code layer** → May need a new module (see Module Growth Rules below)
+
+## Module Growth Rules
+
+Modules should stay focused and digestible. Apply these rules when deciding whether to add content to an existing module or create a new one.
+
+### When to add to an existing module
+- The new content belongs to the same **Claude Code layer** (e.g., a new CLI flag → Module 3, a new hook event → Module 6)
+- The feature is a natural extension of an existing concept (e.g., `/loop` is a built-in command → Module 1)
+- A feature can appear in **two modules** at different depths: introduction in the natural home module, advanced usage in Module 7. Example: `/loop` is introduced in Module 1 (built-in commands list) and explored in Module 7 (combining with agents for orchestration)
+
+### When to split a module
+- A module exceeds **~350 lines** — it's getting too long for a single learning session
+- A module covers **two genuinely distinct topics** that don't share prerequisites (e.g., if Module 6 grew to cover hooks, MCP, AND browser automation in depth, browser automation could split into Module 6b)
+- Quiz questions exceed **6 per module** — learner fatigue
+
+**How to split:**
+1. Identify the natural seam (usually a concept boundary)
+2. Create `module-Na-topic.md` and `module-Nb-topic.md` (or renumber if cleaner)
+3. Update `course/README.md` module table
+4. Update `.claude/skills/course-instructor/SKILL.md` module map and quiz bank
+5. Update navigation links (Previous/Next) in adjacent modules
+6. Log the split in `course/sync-log.md`
+
+### When to create a new module
+Only when **all three** are true:
+1. The topic represents a genuinely new **layer** of Claude Code (not just a new feature in an existing layer)
+2. It has enough depth for **3+ concepts, a quiz, and a build exercise**
+3. It doesn't fit naturally as a section in any existing module
+
+**Examples that would warrant a new module:**
+- Agent Teams (if it graduates from experimental) — multi-agent coordination is a new paradigm
+- Claude Agent SDK (building applications) — fundamentally different from using the CLI
+- CI/CD & Production Deployment — deploying Claude-powered workflows
+
+**Examples that would NOT warrant a new module:**
+- A new MCP server → Module 3 or 6
+- A new agent frontmatter field → Module 5
+- A new built-in command → Module 1
+
+**How to create:**
+1. Create `course/module-N-topic.md` with standard structure (Objectives → Concepts → Quiz → Build Exercise → Completion Check → Further Reading)
+2. Add a row to the mapping table above for the new source files
+3. Update `course/README.md` module table
+4. Update `.claude/skills/course-instructor/SKILL.md` — add module to map, add quiz entries
+5. Update navigation links in the previous last module
+6. Log the addition in `course/sync-log.md`
+
+### Updating dependent files after any structural change
+Whenever modules are added, split, or renumbered, these files MUST be updated:
+- `course/README.md` — module table
+- `.claude/skills/course-instructor/SKILL.md` — module map + quiz bank
+- `course/HOW-TO-LEARN.md` — module table
+- Navigation links (Previous/Next) in affected module files
+- `course/progress.json` schema (if module numbering changes)
