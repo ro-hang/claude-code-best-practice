@@ -119,6 +119,9 @@ There are 50+ built-in slash commands (growing with each release). Here's the ma
 **Scheduled tasks:**
 `/loop` — Schedule recurring tasks on a cron interval (e.g., `/loop 1m "check server status"`). Auto-expires after 3 days. Cancel with `cron cancel <job-id>`.
 
+**Side conversations:**
+`/btw` — Start a side chain conversation while Claude is actively working. Use it to ask a quick question or give a clarifying note without interrupting the main task flow.
+
 ---
 
 ## Concept 5: Effort Levels (Boris's Tip #2)
